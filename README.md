@@ -95,8 +95,11 @@ You decorate index() using example_blueprint.route and associate the function to
 Blueprint objects also provide other methods that you may find useful:
 
 -**.errorhandler()** to register an error handler function
+
 -**.before_request()** to execute an action before every request
+
 -**.after_request()** to execute an action after every request
+
 -**.app_template_filter()** to register a template filter at the application level
 
 You can learn more about using Blueprints and the Blueprint class in the Flask Blueprints Documentation.
@@ -118,7 +121,9 @@ When you call .register_blueprint(), you apply all operations recorded in the Fl
 You can customize how the Flask Blueprint extends the application by providing some parameters to register_blueprint:
 
 -**url_prefix** is an optional prefix for all the Blueprint’s routes.
+
 -**subdomain** is a subdomain that Blueprint routes will match.
+
 -**url_defaults** is a dictionary with default values for view arguments.
 
 Being able to do some customization at registration time, instead of at creation time, is particularly useful when you’re sharing the same Flask Blueprint in different projects.
